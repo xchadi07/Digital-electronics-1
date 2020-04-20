@@ -1,4 +1,4 @@
-# ALU - Aritmeticko-logick· jednotka
+# ALU - Aritmeticko-logick√° jednotka
 
 ## Operace
 
