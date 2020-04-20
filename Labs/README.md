@@ -2,7 +2,7 @@
 
 ## Operace
 
-Hodnota | Operace
+Kód     | Operace
 --------|--------
 0000    | A + B
 0001    | B - A
