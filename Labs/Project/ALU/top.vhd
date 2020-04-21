@@ -11,6 +11,9 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.NUMERIC_STD.all;
 
 ------------------------------------------------------------------------
 -- Entity declaration for top level
@@ -34,7 +37,8 @@ port (
 	 BTN0	:IN std_logic;						-- Synchronus reset
 	 
     disp_seg_o : out std_logic_vector(7-1 downto 0);
-    disp_dig_o : out std_logic_vector(4-1 downto 0)
+    disp_dig_o : out std_logic_vector(4-1 downto 0);
+	 disp_dp : out std_logic
 );
 end entity top;
 
@@ -42,9 +46,9 @@ end entity top;
 -- Architecture declaration for top level
 ------------------------------------------------------------------------
 architecture Behavioral of top is
-    signal s_dataA, s_dataB, s_operation: std_logic_vector(3 downto 0);
+    signal s_dataA, s_dataB, s_operation: unsigned(3 downto 0);
     signal s_carry : std_logic;
-    signal s_result : std_logic_vector(3 downto 0);
+    signal s_result : unsigned(3 downto 0);
     signal s_zero, s_zapor_zn : std_logic;
 	 signal s_clock_enable : std_logic;
 begin
@@ -93,9 +97,9 @@ begin
 			data1_i  =>	s_dataB,		--data B
 			data2_i  =>	s_operation,		--data operation
 			data3_i  =>	s_result,		--data result
-			--dp_i     
+			dp_i => "1111",   
     
-			--dp_o     
+			dp_o => disp_dp,    
 			seg_o => disp_seg_o,    
 			dig_o => disp_dig_o  
     );
