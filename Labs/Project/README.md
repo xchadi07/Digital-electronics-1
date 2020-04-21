@@ -30,10 +30,10 @@ Hodnota | Operace
 
 ## Simulace
 
-# Celková simulace
+### Celková simulace
 ![Alu_tb.JPEG](/Labs/images/simulace_lab08_reset.jpg)
 
-# Zkouška resetu
+### Zkouška resetu
 ![alu_reset_test.JPEG](/Labs/images/simulace_lab08_reset.jpg)
 
 ## Zdroje
