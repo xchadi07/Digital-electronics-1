@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-21T21:30:43</DateModified>
+  <DateModified>2020-04-21T21:38:18</DateModified>
   <ModuleName>top</ModuleName>
-  <SummaryTimeStamp>2020-04-21T20:03:36</SummaryTimeStamp>
-  <SavedFilePath>Z:/GIT/Digital-electronics-1/Labs/Project/ALU/iseconfig/driver_7seg.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Z:/GIT/Digital-electronics-1/Labs/Project/ALU\</ImplementationReportsDirectory>
-  <DateInitialized>2020-04-21T21:30:43</DateInitialized>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>Z:/GIT/Digital-electronics-1/Labs/Project/ALU/iseconfig/top.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Z:/GIT/Digital-electronics-1/Labs/Project/ALU</ImplementationReportsDirectory>
+  <DateInitialized>2020-04-21T21:38:04</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
