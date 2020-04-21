@@ -1,5 +1,9 @@
 # ALU - Aritmeticko-logická jednotka
 
+##Úvod
+
+Aritmeticko-logická jednotka (ALU) je jedna ze základních komponent procesoru, která zodpovída za aritmetické (sčítání, bitový posun,...) a logické (AND, OR,...) operace.
+
 ## Operace
 
 Hodnota | Operace
@@ -20,6 +24,9 @@ Hodnota | Operace
 1101    | A xor B
 1110    | A xnor B
 1111    | A = B ?
+
+##Schéma
+![projekt_schema.png](/Labs/images/projekt_schema.png)
 
 ## Simulace
 

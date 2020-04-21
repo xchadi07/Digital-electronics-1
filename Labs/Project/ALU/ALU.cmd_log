@@ -1,0 +1,3 @@
+vhdtdtfi -lib work Alu.vhd -prj ALU2 -o ALU.spl -module ALU -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr ALU.spl Z:/GIT/Digital-electronics-1/Labs/Project/ALU/ALU.sym 
+vhdtdtfi -prj ALU2 -o Z:/GIT/Digital-electronics-1/Labs/Project/ALU/ALU.vhi -module ALU -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Alu.vhd 

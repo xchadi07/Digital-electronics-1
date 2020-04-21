@@ -86,6 +86,8 @@ begin
 	
 						when "0100" => 																								 -- A + 1 
 								sres_o <= a_i + 1;
+								tmp <= ('0' & a_i) + ('0' & b_i);	
+								carry_o <= tmp(4);	
 	
 	
 						when "0101" => 																								 -- A - 1 

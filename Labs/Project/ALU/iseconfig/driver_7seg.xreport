@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-04-21T15:20:40</DateModified>
+  <DateModified>2020-04-21T21:07:41</DateModified>
   <ModuleName>driver_7seg</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/micha/OneDrive/Dokumenty/XilinxISE/ALU2/iseconfig/driver_7seg.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/micha/OneDrive/Dokumenty/XilinxISE/ALU2</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2020-04-21T20:03:36</SummaryTimeStamp>
+  <SavedFilePath>Z:/GIT/Digital-electronics-1/Labs/Project/ALU/iseconfig/driver_7seg.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Z:/GIT/Digital-electronics-1/Labs/Project/ALU\</ImplementationReportsDirectory>
   <DateInitialized>2020-04-21T14:14:30</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
