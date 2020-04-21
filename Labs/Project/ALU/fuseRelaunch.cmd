@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/micha/OneDrive/Dokumenty/XilinxISE/ALU2/tb_0_isim_beh.exe" -prj "C:/Users/micha/OneDrive/Dokumenty/XilinxISE/ALU2/tb_0_beh.prj" "work.tb_0" 
