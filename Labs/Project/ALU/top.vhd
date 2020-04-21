@@ -30,7 +30,8 @@ port (
     SW10_CPLD  : in  std_logic;
     SW11_CPLD  : in  std_logic;
 	 
-	 BT0	:IN std_logic;						-- Synchronus reset
+	 clk_i      : in  std_logic;
+	 BTN0	:IN std_logic;						-- Synchronus reset
 	 
     disp_seg_o : out std_logic_vector(7-1 downto 0);
     disp_dig_o : out std_logic_vector(4-1 downto 0)
@@ -41,9 +42,9 @@ end entity top;
 -- Architecture declaration for top level
 ------------------------------------------------------------------------
 architecture Behavioral of top is
-    signal s_dataA, s_dataB, s_operation: std_logic_vector(4-1 downto 0);
-    signal s_carry, : std_logic;
-    signal s_result : std_logic_vector(4-1 downto 0);
+    signal s_dataA, s_dataB, s_operation: std_logic_vector(3 downto 0);
+    signal s_carry : std_logic;
+    signal s_result : std_logic_vector(3 downto 0);
     signal s_zero, s_zapor_zn : std_logic;
 	 signal s_clock_enable : std_logic;
 begin
