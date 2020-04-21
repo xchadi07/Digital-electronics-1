@@ -54,6 +54,23 @@ architecture Behavioral of top is
 	 signal s_clock_enable : std_logic;
 begin
 
+    -- Combine 4-bit inputs to internal signals
+    s_operation(3) <= SW11_CPLD;
+    s_operation(2) <= SW10_CPLD;					--Operation
+    s_operation(1) <= SW9_CPLD;
+    s_operation(0) <= SW8_CPLD;
+
+    s_dataB(3) <= SW7_CPLD;			
+    s_dataB(2) <= SW6_CPLD;						--Input B 
+    s_dataB(1) <= SW5_CPLD;
+    s_dataB(0) <= SW4_CPLD;
+
+    s_dataA(3) <= SW3_CPLD;
+    s_dataA(2) <= SW2_CPLD;						--Input A 
+    s_dataA(1) <= SW1_CPLD;
+    s_dataA(0) <= SW0_CPLD;
+
+-----------------------------------------------
 		-- Sub-block of clock_enable entity
 	 CLOCK_ENABLE : entity work.clock_enable
 	 generic map (
