@@ -1,4 +1,4 @@
-# ALU - Aritmeticko-logick· jednotka
+# ALU - Aritmeticko-logick√° jednotka
 
 ## Operace
 
@@ -23,10 +23,10 @@ Hodnota | Operace
 
 ## Simulace
 
-# Celkov· simulace
+# Celkov√° simulace
 ![Alu_tb.JPEG](/Labs/images/simulace_lab08_reset.jpg)
 
-# Zkouöka resetu
+# Zkou≈°ka resetu
 ![alu_reset_test.JPEG](/Labs/images/simulace_lab08_reset.jpg)
 
 ## Zdroje
