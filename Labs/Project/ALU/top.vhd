@@ -46,7 +46,8 @@ end entity top;
 -- Architecture declaration for top level
 ------------------------------------------------------------------------
 architecture Behavioral of top is
-    signal s_dataA, s_dataB, s_operation: unsigned(3 downto 0);
+    signal s_dataA, s_dataB : unsigned(3 downto 0);
+	 signal s_operation: std_logic_vector(3 downto 0);
     signal s_carry : std_logic;
     signal s_result : unsigned(3 downto 0);
     signal s_zero, s_zapor_zn : std_logic;
@@ -93,10 +94,10 @@ begin
     port map (
          clk_i => clk_i,   
 			srst_n_i => BTN0,
-			data0_i  => s_dataA,		--data A
-			data1_i  =>	s_dataB,		--data B
+			data0_i  => std_logic_vector(s_dataA),		--data A
+			data1_i  =>	std_logic_vector(s_dataB),		--data B
 			data2_i  =>	s_operation,		--data operation
-			data3_i  =>	s_result,		--data result
+			data3_i  =>	std_logic_vector(s_result),		--data result
 			dp_i => "1111",   
     
 			dp_o => disp_dp,    
