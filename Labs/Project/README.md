@@ -25,8 +25,15 @@ Hodnota | Operace
 1110    | A xnor B
 1111    | A = B ?
 
-## Schéma
+## Schémata
+###Alu jednotka z ISE
+![ALU_part.PNG](/Labs/images/Alu_part.png)
+
+###Celkové zapojení
 ![projekt_schema.png](/Labs/images/projekt_schema.png)
+
+###Celkové zapojení z ISE
+![Top.png](/Labs/images/Top.png)
 
 ## Simulace
 
