@@ -4,7 +4,30 @@
 
 Aritmeticko-logická jednotka (ALU, Arithmetic & Logic Unit) je jedna ze základních komponent procesoru, která zodpovída za aritmetické (sčítání, bitový posun,...) a logické (AND, OR,...) operace.
 
-V našem projektu se nachází čtyřbitová jednotka s možností výběru vstupních hodnot A, B a operace.
+## Tento projekt
+* čtyřbitová jednotka
+* možnost výběru vstupních hodnot A, B a operace
+* indikace nulového výsledku, záporného znaménka a carry bitu
+* synchronní reset
+* zobrazení vstupních hodnot (vč. hodnoty pro operaci) a výsledku na sedmisegmentovém displeji
+
+## vstupy
+Název     | Popis | Velikost |
+------    |-------|----------|
+a_i, b_i  | vstupní hodnoty | 4 bity
+op_i      | výběr operace | 4 bity
+clk_i     | clock | 1 bit
+alu_en_i  | alu/ clock enable | 1 bit
+srst_i    | reset | 1 bit
+
+## výstupy
+Název     | Popis | Velikost |
+------    |-------|----------|
+zero_o    | signalzace výsledku "0" | 1 bit
+zapor_zn_o| signalizace záporného znaménka výsledku | 1 bit
+carry_o   | signalizace carry bitu | 1 bit
+res_o     | výsledek | 4 bity
+
 
 ## Operace
 
@@ -21,8 +44,8 @@ Hodnota | Operace
 ### Logická část
 Hodnota | Operace
 --------|--------
-0110    | A rotace vpravo
-0111    | A rotace vlevo
+0110    | A ROR
+0111    | A ROL
 1000    | A << 1
 1001    | A or B
 1010    | A and B
@@ -41,6 +64,8 @@ Hodnota | Operace
 
 ### Celkové zapojení z ISE
 ![Top.JPG](/Labs/images/Top.jpg)
+
+Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty A, B a operace a 1 resetovací tlačítko. Výstupy pro signalizaci carry bitu, výsledku "0" a záporného znaménka jsou zapojeny do led diod. Pomocí modulu driver_7seg se vstupní hodnoty (vč. hodnoty pro operaci) a výsledek zobrazují na sedmisegmentovém displeji.
 
 ## Simulace
 
