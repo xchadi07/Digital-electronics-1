@@ -26,13 +26,13 @@ Hodnota | Operace
 1111    | A = B ?
 
 ## Schémata
-###Alu jednotka z ISE
-![ALU_part.PNG](/Labs/images/Alu_part.png)
+### Alu jednotka z ISE
+![Alu_part.PNG](/Labs/images/Alu_part.PNG)
 
-###Celkové zapojení
+### Celkové zapojení
 ![projekt_schema.png](/Labs/images/projekt_schema.png)
 
-###Celkové zapojení z ISE
+### Celkové zapojení z ISE
 ![Top.JPG](/Labs/images/Top.jpg)
 
 ## Simulace
