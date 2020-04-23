@@ -31,10 +31,10 @@ Hodnota | Operace
 ## Simulace
 
 ### Celková simulace
-![Alu_tb.JPG](/Labs/images/Alu_tb.jpg)
+![Alu_tb.PNG](/Labs/images/Alu_tb.png)
 
 ### Zkouška resetu
-![alu_reset_test.JPG](/Labs/images/alu_reset_test.jpg)
+![alu_reset_test.PNG](/Labs/images/alu_reset_test.png)
 
 ## Zdroje
 https://en.wikibooks.org/wiki/VHDL_for_FPGA_Design/4-Bit_ALU
