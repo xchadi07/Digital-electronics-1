@@ -75,6 +75,9 @@ Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty
 ### Zkouška resetu
 ![alu_reset_test.PNG](/Labs/images/alu_reset_test.png)
 
+### Reset za chodu
+![rst_zachodu.PNG](/Labs/images/rst_zachodu.PNG)
+
 ### Ukázka zobrazení hodnot na jednotlivých displejích pro funkci A + B, kdy A = 8 a B = 4
 Pro přehlednější ukázku byla změněna hodnota g_NPERIOD => x"0019" v modulu driver_7seg
 ![top_sim.PNG](/Labs/images/top_sim.PNG)
