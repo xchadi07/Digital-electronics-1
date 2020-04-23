@@ -87,6 +87,11 @@ BEGIN
    wait for 50 ns;
   end loop;
     
+	 srst_n_i <= '1';
+	 wait for clk_i_period*5;
+	 srst_n_i <= '0';
+	 wait for clk_i_period*5;
+	 srst_n_i <= '1';
       wait;
    end process;
 
