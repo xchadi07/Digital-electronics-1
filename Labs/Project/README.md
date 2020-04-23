@@ -52,7 +52,7 @@ Hodnota | Operace
 
 ### Ukázka zobrazení hodnot na jednotlivých displejích pro funkci A + B, kdy A = 8 a B = 4
 Pro přehlednější ukázku byla změněna hodnota g_NPERIOD => x"0019" v modulu driver_7seg
-![Top_sim.PNG](/Labs/images/Top_sim.png)
+![top_sim.PNG](/Labs/images/top_sim.PNG)
 
 ## Zdroje
 * https://en.wikibooks.org/wiki/VHDL_for_FPGA_Design/4-Bit_ALU
