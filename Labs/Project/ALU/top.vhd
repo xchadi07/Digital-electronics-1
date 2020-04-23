@@ -70,8 +70,8 @@ begin
     s_dataA(1) <= SW1_CPLD;
     s_dataA(0) <= SW0_CPLD;
 
------------------------------------------------
-		-- Sub-block of clock_enable entity
+    ------------------------------------------------------------------
+    -- Sub-block of clock_enable entity
 	 CLOCK_ENABLE : entity work.clock_enable
 
     port map (
@@ -81,7 +81,7 @@ begin
 			clock_enable_o => s_clock_enable
     );
 	 
-	 
+    -------------------------------------------------------------------	 
     -- Sub-block of ALU entity
     ALU : entity work.ALU
     port map (
