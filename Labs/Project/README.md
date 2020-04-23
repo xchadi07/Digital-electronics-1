@@ -65,7 +65,7 @@ Hodnota | Operace
 
 ### Celkové zapojení z ISE
 ![Top.JPG](/Labs/images/Top.jpg)
-Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty A, B a operace a 1 resetovací tlačítko. Výstupy pro signalizaci carry bitu, výsledku "0" a záporného znaménka jsou zapojeny do led diod. Pomocí modulu driver_7seg se vstupní hodnoty (vč. hodnoty pro operaci) a výsledek zobrazují na sedmisegmentovém displeji.
+Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty A, B a operace a 1 resetovací tlačítko. Výstupy pro signalizaci carry bitu, výsledku "0" a záporného znaménka jsou zapojeny do led diod. Pomocí modulu driver_7seg a hex_to_7seg se vstupní hodnoty (vč. hodnoty pro operaci) a výsledek zobrazují na sedmisegmentovém displeji.
 
 ## Simulace
 
