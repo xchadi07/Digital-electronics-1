@@ -1,1 +1,5 @@
 work	"Alu.vhd"
+work	"clock_enable.vhd"
+work	"drive_7seg.vhd"
+work	"hex_to_7seg.vhd"
+work	"top.vhd"

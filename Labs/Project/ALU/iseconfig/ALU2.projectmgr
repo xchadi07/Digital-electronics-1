@@ -10,13 +10,13 @@
          <ClosedNode>/top - Behavioral C:|Users|micha|OneDrive|Dokumenty|GitHub|Digital-electronics-1|Labs|Project|ALU|top.vhd/Driver7Seg - driver_7seg - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ALU - ALU - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/Alu.vhd)</SelectedItem>
+         <SelectedItem>top - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/top.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000371000000020000000000000000000000000200000064ffffffff000000810000000300000002000003710000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ALU - ALU - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/Alu.vhd)</CurrentItem>
+      <CurrentItem>top - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/top.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -77,13 +77,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>top - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/top.vhd)</SelectedItem>
+         <SelectedItem>Driver7Seg - driver_7seg - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/drive_7seg.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000038b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000038b0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000039f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000039f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>top - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/top.vhd)</CurrentItem>
+      <CurrentItem>Driver7Seg - driver_7seg - Behavioral (C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/drive_7seg.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -113,5 +113,5 @@
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
 </Project>

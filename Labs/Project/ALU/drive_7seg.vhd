@@ -36,7 +36,7 @@ begin
 			CLOCK_ENABLE0 : entity work.clock_enable
 			
 					generic map (
-									 g_NPERIOD => x"0028"      									 
+									 g_NPERIOD => x"0019"      									 
 														  
 										)
 					port map (

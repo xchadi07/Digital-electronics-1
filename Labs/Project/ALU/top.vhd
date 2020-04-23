@@ -73,9 +73,7 @@ begin
 -----------------------------------------------
 		-- Sub-block of clock_enable entity
 	 CLOCK_ENABLE : entity work.clock_enable
-	 generic map (
-			g_NPERIOD => x"1234"
-	 )
+
     port map (
 	 
 			clk_i => clk_i,
