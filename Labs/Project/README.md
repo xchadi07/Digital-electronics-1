@@ -10,6 +10,7 @@ Aritmeticko-logická jednotka (ALU, Arithmetic & Logic Unit) je jedna ze základ
 * indikace nulového výsledku, záporného znaménka a carry bitu
 * synchronní reset
 * zobrazení vstupních hodnot (vč. hodnoty pro operaci) a výsledku na sedmisegmentovém displeji
+* implementace top vrstvy na CoolRunner-II CPLD starter board XC2C256-TQ144
 
 ## vstupy
 Název     | Popis | Velikost |
