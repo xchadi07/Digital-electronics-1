@@ -33,7 +33,7 @@ Hodnota | Operace
 ![projekt_schema.png](/Labs/images/projekt_schema.png)
 
 ###Celkové zapojení z ISE
-![Top.png](/Labs/images/Top.png)
+![Top.JPG](/Labs/images/Top.jpg)
 
 ## Simulace
 
