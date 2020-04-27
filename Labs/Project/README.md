@@ -70,7 +70,7 @@ Hodnota | Operace
 ![projekt_schema.png](/Labs/images/projekt_schema.png)
 
 ### Celkové zapojení z ISE
-![Top.JPG](/Labs/images/Top.jpg)
+![Top_2.JPG](/Labs/images/Top_2.jpg)
 Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty A, B a operace a 1 resetovací tlačítko. Výstupy pro signalizaci carry bitu, výsledku "0" a záporného znaménka jsou zapojeny do led diod. Pomocí modulu driver_7seg a hex_to_7seg se vstupní hodnoty (vč. hodnoty pro operaci) a výsledek zobrazují na sedmisegmentovém displeji.
 
 ## Simulace
