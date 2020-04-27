@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/top_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/Users/micha/OneDrive/Dokumenty/XilinxISE/Z GITU/ALU/top_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
@@ -13,66 +13,54 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="9" />
-   <wvobject fp_name="vbus21" type="vbus" db_ref_id="1">
-      <obj_property name="label">A_switches</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/top_tb/sw3_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw3_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw3_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw2_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw2_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw2_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw1_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw1_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw1_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw0_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw0_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw0_cpld</obj_property>
-      </wvobject>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/top_tb/sw0_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw0_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw0_cpld</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus22" type="vbus" db_ref_id="1">
-      <obj_property name="label">B_switches</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/top_tb/sw7_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw7_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw7_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw6_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw6_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw6_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw5_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw5_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw5_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw4_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw4_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw4_cpld</obj_property>
-      </wvobject>
+   <wvobject fp_name="/top_tb/sw1_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw1_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw1_cpld</obj_property>
    </wvobject>
-   <wvobject fp_name="vbus23" type="vbus" db_ref_id="1">
-      <obj_property name="label">op_switches</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/top_tb/sw11_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw11_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw11_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw10_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw10_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw10_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw9_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw9_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw9_cpld</obj_property>
-      </wvobject>
-      <wvobject fp_name="/top_tb/sw8_cpld" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">sw8_cpld</obj_property>
-         <obj_property name="ObjectShortName">sw8_cpld</obj_property>
-      </wvobject>
+   <wvobject fp_name="/top_tb/sw2_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw2_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw2_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw3_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw3_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw3_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw4_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw4_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw4_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw5_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw5_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw5_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw6_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw6_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw6_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw7_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw7_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw7_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw8_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw8_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw8_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw9_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw9_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw9_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw10_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw10_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw10_cpld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/sw11_cpld" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sw11_cpld</obj_property>
+      <obj_property name="ObjectShortName">sw11_cpld</obj_property>
    </wvobject>
    <wvobject fp_name="/top_tb/clk_i" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk_i</obj_property>
@@ -97,5 +85,17 @@
    <wvobject fp_name="/top_tb/clk_i_period" type="other" db_ref_id="1">
       <obj_property name="ElementShortName">clk_i_period</obj_property>
       <obj_property name="ObjectShortName">clk_i_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/uut/s_zapor_zn" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_zapor_zn</obj_property>
+      <obj_property name="ObjectShortName">s_zapor_zn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/uut/s_zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_zero</obj_property>
+      <obj_property name="ObjectShortName">s_zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_tb/uut/s_carry" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_carry</obj_property>
+      <obj_property name="ObjectShortName">s_carry</obj_property>
    </wvobject>
 </wave_config>

@@ -110,9 +110,9 @@ begin
          clk_i => clk_i,   
          srst_n_i => BTN0,
          data0_i  => std_logic_vector(s_dataA),        --data A
-         data1_i  =>   std_logic_vector(s_dataB),      --data B
-         data2_i  =>   s_operation,                    --data operation
-         data3_i  =>   std_logic_vector(s_result),     --data result
+         data1_i  => std_logic_vector(s_dataB),        --data B
+         data2_i  => s_operation,                      --data operation
+         data3_i  => std_logic_vector(s_result),       --data result
          dp_i => "1111",   
     
          dp_o => disp_dp,    

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/top_tb_isim_beh.exe" -prj "C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/top_tb_beh.prj" "work.top_tb" 
+-intstyle "ise" -incremental -o "C:/Users/micha/OneDrive/Dokumenty/XilinxISE/Z GITU/ALU/top_tb_isim_beh.exe" -prj "C:/Users/micha/OneDrive/Dokumenty/XilinxISE/Z GITU/ALU/top_tb_beh.prj" "work.top_tb" 

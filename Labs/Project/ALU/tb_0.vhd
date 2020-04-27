@@ -78,7 +78,7 @@ BEGIN
    begin  
        --hold reset state for 100 ns.
        
-     a_i <= "1111";
+     a_i <= "1100";
      b_i <= x"4";
      op_i <= x"0";
   
@@ -87,11 +87,11 @@ BEGIN
      wait for 50 ns;
      end loop;
     
-     srst_n_i <= '1';
-     wait for clk_i_period*5;
-     srst_n_i <= '0';
-     wait for clk_i_period*5;
-     srst_n_i <= '1';
+--     srst_n_i <= '1';
+--     wait for clk_i_period*5;
+--     srst_n_i <= '0';
+--     wait for clk_i_period*5;
+--     srst_n_i <= '1';
      wait;
    end process;
 

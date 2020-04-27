@@ -44,8 +44,14 @@ begin
          
             carry_o <= '0';
             zapor_zn_o <= '0';
+				
+				if (sres_o >= "1000") then                  -- podmínka pro signalizaci záporné hodnoty kvùli pøepoètu podle dvojkového doplòku 
+				                                            -- (max kladná hodnota = 7)
+				zapor_zn_o <= '1';
+				
+				end if;
          
-            if srst_n_i = '0' then                                   --reset
+            if srst_n_i = '0' then                      -- reset
                sres_o <= (others => '0');   
                
             elsif alu_en_i = '1' then
@@ -62,24 +68,36 @@ begin
                         carry_o <= tmp(4);                         -- pøiøazení carry bitu 
    
                   when "0001" =>                        -- A - B
+						
+						      if (sres_o >= "1000") then                     -- podmínky pro signalizaci záporné hodnoty výsledku
+								       zapor_zn_o <= '1';
    
-                        if (a_i >= b_i) then                      -- podmínka pro signalizaci záporné hodnoty výsledku
+                        else if (a_i >= b_i) then         
                               sres_o <= a_i - b_i; 
                               zapor_zn_o <= '0';
+										
+							   
                         else 
                               sres_o <= b_i - a_i; 
                               zapor_zn_o <= '1';
+										
+								
+				            end if;
                         end if;
    
                   when "0010" =>                         -- B - A
+						
+						      if (sres_o >= "1000") then                     -- podmínky pro signalizaci záporné hodnoty výsledku
+								       zapor_zn_o <= '1';
    
-                        if (b_i >= a_i) then                      -- podmínka pro signalizaci záporné hodnoty výsledku
+                        else if (b_i >= a_i) then                      
                               sres_o <= b_i - a_i;    
                               zapor_zn_o <= '0';
                         else 
                               sres_o <= a_i - b_i; 
                               zapor_zn_o <= '1';
                         end if;
+								end if;
    
                   when "0011" =>                          -- A * B (krát) 
                         sres_o <= to_unsigned(to_integer(unsigned(a_i)) * to_integer(unsigned(b_i)),4);
@@ -91,7 +109,23 @@ begin
    
    
                   when "0101" =>                          -- A - 1 
-                        sres_o <= a_i - 1;
+						 
+						      if (sres_o >= "1000") then                   -- podmínky pro signalizaci záporné hodnoty výsledku
+								       zapor_zn_o <= '1';
+   
+                        else if (a_i >= 1) then                     
+                              sres_o <= a_i - 1; 
+                              zapor_zn_o <= '0';
+										
+							   
+                        else 
+                              sres_o <= 1 - a_i; 
+                              zapor_zn_o <= '1';
+										
+								
+				            end if;
+                        end if;
+                       -- sres_o <= a_i - 1;
                         
 ------------------------------------------------------------------------
 -- Logic part declaration 
