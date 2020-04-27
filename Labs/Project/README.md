@@ -15,7 +15,8 @@ Aritmeticko-logická jednotka (ALU, Arithmetic & Logic Unit) je jedna ze základ
 
 ### Dvojkový doplňek
 ![dvojk_dop.PNG](/Labs/images/dvojk_dop.PNG)
-## vstupy
+
+## Vstupy
 Název     | Popis | Velikost |
 ------    |-------|----------|
 a_i, b_i  | vstupní hodnoty | 4 bity
@@ -24,17 +25,20 @@ clk_i     | clock | 1 bit
 alu_en_i  | alu/ clock enable | 1 bit
 srst_i    | reset | 1 bit
 
-## výstupy
+## Výstupy
 Název     | Popis | Velikost |
 ------    |-------|----------|
 zero_o    | signalzace výsledku "0" | 1 bit
 zapor_zn_o| signalizace záporného znaménka výsledku | 1 bit
 carry_o   | signalizace carry bitu | 1 bit
+res_o     | výsledek | 4 bity
+
+## Výstupy určené ke správnému odečtení hodnot ze sedmisegmentových displejů
+Název     | Popis | Velikost |
+------    |-------|----------|
 a_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup A | 1 bit
 b_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup B | 1 bit
 op_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup OP | 1 bit
-res_o     | výsledek | 4 bity
-
 
 ## Operace
 
@@ -65,6 +69,9 @@ Hodnota | Operace
 ## Schémata
 ### Alu jednotka z ISE
 ![Alu_part.PNG](/Labs/images/Alu_part.PNG)
+
+### Top modul z ISE
+![top_alu.PNG](/Labs/images/top_alu.PNG)
 
 ### Celkové zapojení
 ![projekt_schema.png](/Labs/images/projekt_schema.png)
