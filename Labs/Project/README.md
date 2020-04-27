@@ -11,7 +11,7 @@ Aritmeticko-logická jednotka (ALU, Arithmetic & Logic Unit) je jedna ze základ
 * synchronní reset
 * zobrazení vstupních hodnot (vč. hodnoty pro operaci) a výsledku na sedmisegmentovém displeji
 * implementace top vrstvy na CoolRunner-II CPLD starter board XC2C256-TQ144
-* Jednotka počítá s hodnotami typu unsigned, ale na displeji se zobrazují jako jako typ signed se signalizací záporného znaménka pomocí led diody, kvůli přepočítání podle dvojkového doplňku. Čtyřbytová jednotka může dosáhnout maximální kladné hodnoty 7 a další hodnoty se přepočítají na záporné (viz. obrázek). Tento převod jsme provedli stanovením podmínky v modulu ALU, kdy se při hodnotách výsledku větších nebo rovných 8 signalizuje záporná hodnota a pomocí modulu hex_to_7seg, kde jsme implementovali hodnoty 9 a vyšší jako hodnoty 7, 6,...,1.
+* Jednotka počítá s hodnotami typu unsigned, ale na displeji se zobrazují jako jako typ signed se signalizací záporného znaménka pomocí led diody, kvůli přepočítání podle dvojkového doplňku. Čtyřbytová jednotka může dosáhnout maximální kladné hodnoty 7 a další hodnoty se přepočítají na záporné (viz. obrázek). Tento převod jsme provedli stanovením podmínek v modulu ALU, kdy se při hodnotách výsledku i vstupních hodnot větších nebo rovných 8 signalizuje záporná hodnota a pomocí modulu hex_to_7seg, kde jsme implementovali hodnoty 9 a vyšší jako hodnoty 7, 6,...,1.
 
 ### Dvojkový doplňek
 ![dvojk_dop.PNG](/Labs/images/dvojk_dop.PNG)
@@ -29,13 +29,13 @@ srst_i    | reset | 1 bit
 Název     | Popis | Velikost |
 ------    |-------|----------|
 zero_o    | signalzace výsledku "0" | 1 bit
-zapor_zn_o| signalizace záporného znaménka výsledku | 1 bit
 carry_o   | signalizace carry bitu | 1 bit
 res_o     | výsledek | 4 bity
 
 ## Výstupy určené ke správnému odečtení hodnot ze sedmisegmentových displejů
 Název     | Popis | Velikost |
 ------    |-------|----------|
+zapor_zn_o| signalizace záporného znaménka výsledku | 1 bit
 a_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup A | 1 bit
 b_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup B | 1 bit
 op_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup OP | 1 bit
@@ -78,7 +78,7 @@ Hodnota | Operace
 
 ### Celkové zapojení z ISE
 ![Top_2.JPG](/Labs/images/Top_2.jpg)
-Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty A, B a operace a 1 resetovací tlačítko. Výstupy pro signalizaci carry bitu, výsledku "0" a záporného znaménka jsou zapojeny do led diod. Pomocí modulu driver_7seg a hex_to_7seg se vstupní hodnoty (vč. hodnoty pro operaci) a výsledek zobrazují na sedmisegmentovém displeji.
+Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty A, B a operace a 1 resetovací tlačítko. Výstupy pro signalizaci carry bitu, výsledku "0", záporného znaménka výsledku a přepočet vstupů podle dvojkového doplňku jsou zapojeny do led diod. Pomocí modulu driver_7seg a hex_to_7seg se vstupní hodnoty (vč. hodnoty pro operaci) a výsledek zobrazují na sedmisegmentovém displeji.
 
 ## Simulace
 
