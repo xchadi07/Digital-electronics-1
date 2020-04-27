@@ -15,7 +15,8 @@ Aritmeticko-logická jednotka (ALU, Arithmetic & Logic Unit) je jedna ze základ
 
 ### Dvojkový doplňek
 ![dvojk_dop.PNG](/Labs/images/dvojk_dop.PNG)
-## vstupy
+
+## Vstupy
 Název     | Popis | Velikost |
 ------    |-------|----------|
 a_i, b_i  | vstupní hodnoty | 4 bity
@@ -24,7 +25,7 @@ clk_i     | clock | 1 bit
 alu_en_i  | alu/ clock enable | 1 bit
 srst_i    | reset | 1 bit
 
-## výstupy
+## Výstupy
 Název     | Popis | Velikost |
 ------    |-------|----------|
 zero_o    | signalzace výsledku "0" | 1 bit
@@ -32,6 +33,12 @@ zapor_zn_o| signalizace záporného znaménka výsledku | 1 bit
 carry_o   | signalizace carry bitu | 1 bit
 res_o     | výsledek | 4 bity
 
+## Výstupy určené ke správnému odečtení hodnot ze sedmisegmentových displejů
+Název     | Popis | Velikost |
+------    |-------|----------|
+a_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup A | 1 bit
+b_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup B | 1 bit
+op_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup OP | 1 bit
 
 ## Operace
 
@@ -63,11 +70,14 @@ Hodnota | Operace
 ### Alu jednotka z ISE
 ![Alu_part.PNG](/Labs/images/Alu_part.PNG)
 
+### Top modul z ISE
+![top_alu.PNG](/Labs/images/top_alu.PNG)
+
 ### Celkové zapojení
 ![projekt_schema.png](/Labs/images/projekt_schema.png)
 
 ### Celkové zapojení z ISE
-![Top.JPG](/Labs/images/Top.jpg)
+![Top_2.JPG](/Labs/images/Top_2.jpg)
 Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty A, B a operace a 1 resetovací tlačítko. Výstupy pro signalizaci carry bitu, výsledku "0" a záporného znaménka jsou zapojeny do led diod. Pomocí modulu driver_7seg a hex_to_7seg se vstupní hodnoty (vč. hodnoty pro operaci) a výsledek zobrazují na sedmisegmentovém displeji.
 
 ## Simulace
@@ -81,7 +91,7 @@ Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty
 ### Reset za chodu
 ![rst_zachodu_2.PNG](/Labs/images/rst_zachodu_2.PNG)
 
-### Ukázka zobrazení hodnot na jednotlivých displejích pro funkci A + B, kdy A = 8 a B = 4
+### Ukázka zobrazení hodnot na jednotlivých displejích a indikací led diodami pro funkci A + B, kdy A = 8 a B = 4
 Pro přehlednější ukázku byla změněna hodnota g_NPERIOD => x"0019" v modulu driver_7seg. 
 Výsledek výpočtu je C, ale v našem případě je zobrazen jako 4 s indikací záporného znaménka.
 ![top_sim_2.PNG](/Labs/images/top_sim_2.PNG)
