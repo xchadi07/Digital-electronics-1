@@ -89,3 +89,4 @@ Pro přehlednější ukázku byla změněna hodnota g_NPERIOD => x"0019" v modul
 * https://moodle.vutbr.cz/pluginfile.php/183804/mod_resource/content/1/vhdl_kubicek.pdf
 * http://www.et-pocitacovesystemy.wz.cz/cislicova_technika/komb_log_obvody/aritm_log_jednotka/alu.html
 * https://gist.github.com/pauljohanneskraft/b3e9d8f27b62200da705b258b63bdd60
+* https://portal.matematickabiologie.cz/index.php?pg=zaklady-informatiky-pro-biology--teoreticke-zaklady-informatiky--teorie-cisel--dvojkovy-doplnek&fbclid=IwAR1cch5-jUgGqPjN9wNR4A7MHOeeRPlgDCLQR5w48rFSjkFIHv-hKW3gtwY
