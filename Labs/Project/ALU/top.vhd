@@ -40,13 +40,13 @@ port (
     disp_seg_o : out std_logic_vector(7-1 downto 0);
     disp_dig_o : out std_logic_vector(4-1 downto 0);
     disp_dp    : out std_logic;
-	 
-	 LD0        : out std_logic;           -- Carry
+    
+    LD0        : out std_logic;           -- Carry
     LD1        : out std_logic;           -- Zaporné znaménko
     LD2        : out std_logic;           -- Výsledek = 0
-	 LD0_CPLD   : out std_logic;           -- Pøepoèet vstupu A podle dvojkového doplòku (záporná hodnota)
-	 LD1_CPLD   : out std_logic;           -- Pøepoèet vstupu B podle dvojkového doplòku (záporná hodnota)
-	 LD2_CPLD   : out std_logic            -- Pøepoèet vstupu OP podle dvojkového doplòku (záporná hodnota)
+    LD0_CPLD   : out std_logic;           -- Pøepoèet vstupu A podle dvojkového doplòku (záporná hodnota)
+    LD1_CPLD   : out std_logic;           -- Pøepoèet vstupu B podle dvojkového doplòku (záporná hodnota)
+    LD2_CPLD   : out std_logic            -- Pøepoèet vstupu OP podle dvojkového doplòku (záporná hodnota)
 );
 end entity top;
 
@@ -60,7 +60,7 @@ architecture Behavioral of top is
     signal s_result : unsigned(3 downto 0);
     signal s_zero, s_zapor_zn : std_logic;
     signal s_clock_enable : std_logic;
-	 signal s_a_dvojk_o, s_b_dvojk_o, s_op_dvojk_o : std_logic;
+    signal s_a_dvojk_o, s_b_dvojk_o, s_op_dvojk_o : std_logic;
 begin
 
     -- Combine 4-bit inputs to internal signals
@@ -78,8 +78,8 @@ begin
     s_dataA(2) <= SW2_CPLD;                  
     s_dataA(1) <= SW1_CPLD;
     s_dataA(0) <= SW0_CPLD;
-	 
-	 
+    
+    
 
     ------------------------------------------------------------------
     -- Sub-block of clock_enable entity
@@ -111,10 +111,10 @@ begin
          carry_o => s_carry,
          zero_o => s_zero,
          zapor_zn_o => s_zapor_zn,
-			a_dvojk_o => s_a_dvojk_o,
-			b_dvojk_o => s_b_dvojk_o,
-			op_dvojk_o => s_op_dvojk_o
-			
+         a_dvojk_o => s_a_dvojk_o,
+         b_dvojk_o => s_b_dvojk_o,
+         op_dvojk_o => s_op_dvojk_o
+         
     );
 
 
@@ -134,13 +134,13 @@ begin
          seg_o => disp_seg_o,    
          dig_o => disp_dig_o  
     );
-	 
+    
     LD0 <= s_carry;
-	 LD1 <= s_zapor_zn;
-	 LD2 <= s_zero;
-	 LD0_CPLD <= s_a_dvojk_o;
-	 LD1_CPLD <= s_b_dvojk_o;
-	 LD2_CPLD <= s_op_dvojk_o;
+    LD1 <= s_zapor_zn;
+    LD2 <= s_zero;
+    LD0_CPLD <= s_a_dvojk_o;
+    LD1_CPLD <= s_b_dvojk_o;
+    LD2_CPLD <= s_op_dvojk_o;
 
 
 end architecture Behavioral;
