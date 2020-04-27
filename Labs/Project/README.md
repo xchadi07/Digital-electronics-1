@@ -30,6 +30,9 @@ Název     | Popis | Velikost |
 zero_o    | signalzace výsledku "0" | 1 bit
 zapor_zn_o| signalizace záporného znaménka výsledku | 1 bit
 carry_o   | signalizace carry bitu | 1 bit
+a_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup A | 1 bit
+b_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup B | 1 bit
+op_dvojk_o | signalizace přepočtené hodnoty pomocí dvojkového doplňku pro vstup OP | 1 bit
 res_o     | výsledek | 4 bity
 
 
@@ -81,7 +84,7 @@ Jednotka používá 12 switchů, pomocí kterých se nastavují vstupní hodnoty
 ### Reset za chodu
 ![rst_zachodu_2.PNG](/Labs/images/rst_zachodu_2.PNG)
 
-### Ukázka zobrazení hodnot na jednotlivých displejích pro funkci A + B, kdy A = 8 a B = 4
+### Ukázka zobrazení hodnot na jednotlivých displejích a indikací led diodami pro funkci A + B, kdy A = 8 a B = 4
 Pro přehlednější ukázku byla změněna hodnota g_NPERIOD => x"0019" v modulu driver_7seg. 
 Výsledek výpočtu je C, ale v našem případě je zobrazen jako 4 s indikací záporného znaménka.
 ![top_sim_2.PNG](/Labs/images/top_sim_2.PNG)
