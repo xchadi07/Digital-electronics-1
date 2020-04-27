@@ -26,6 +26,9 @@ ARCHITECTURE behavior OF tb_0 IS
          zero_o      : OUT std_logic;
          zapor_zn_o  : OUT std_logic;
          carry_o     : OUT std_logic;
+			a_dvojk_o   : out std_logic;
+			b_dvojk_o   : out std_logic;
+			op_dvojk_o  : out std_logic;
          res_o       : OUT unsigned(3 downto 0)
          
         );
@@ -44,6 +47,9 @@ ARCHITECTURE behavior OF tb_0 IS
    signal zero_o : std_logic;
    signal zapor_zn_o : std_logic;
    signal carry_o : std_logic;
+	signal a_dvojk_o : std_logic;
+	signal b_dvojk_o : std_logic;
+	signal op_dvojk_o : std_logic;
    signal res_o : unsigned(3 downto 0);
 
  constant clk_i_period : time := 10 ns;
@@ -61,7 +67,10 @@ BEGIN
           zero_o => zero_o,
           zapor_zn_o => zapor_zn_o,
           carry_o => carry_o,
-          res_o => res_o
+          res_o => res_o,
+			 a_dvojk_o => a_dvojk_o,
+			 b_dvojk_o => b_dvojk_o,
+			 op_dvojk_o => op_dvojk_o
         );
 
  -- Clock process definitions

@@ -31,7 +31,14 @@ ARCHITECTURE behavior OF top_tb IS
 			
          disp_seg_o : OUT  std_logic_vector(6 downto 0);
          disp_dig_o : OUT  std_logic_vector(3 downto 0);
-         disp_dp    : OUT  std_logic
+         disp_dp    : OUT  std_logic;
+			
+			LD0        : out std_logic;        
+         LD1        : out std_logic;           
+         LD2        : out std_logic;           
+	      LD0_CPLD   : out std_logic;
+			LD1_CPLD   : out std_logic;
+			LD2_CPLD   : out std_logic
         );
     END COMPONENT;
     
@@ -59,6 +66,13 @@ ARCHITECTURE behavior OF top_tb IS
    signal disp_seg_o : std_logic_vector(6 downto 0);
    signal disp_dig_o : std_logic_vector(3 downto 0);
    signal disp_dp    : std_logic;
+	
+	signal LD0        : std_logic;        
+   signal LD1        : std_logic;            
+   signal LD2        : std_logic;
+   signal LD0_CPLD   : std_logic; 
+   signal LD1_CPLD   : std_logic; 
+   signal LD2_CPLD   : std_logic;	
 
    -- Clock period definitions
    constant clk_i_period : time := 10 ns;
@@ -83,7 +97,13 @@ BEGIN
           BTN0 => BTN0,
           disp_seg_o => disp_seg_o,
           disp_dig_o => disp_dig_o,
-          disp_dp => disp_dp
+          disp_dp => disp_dp,
+			 LD0 => LD0,
+			 LD1 => LD1,
+			 LD2 => LD2,
+			 LD0_CPLD => LD0_CPLD,
+			 LD1_CPLD => LD1_CPLD,
+			 LD2_CPLD => LD2_CPLD
         );
 
    -- Clock process definitions

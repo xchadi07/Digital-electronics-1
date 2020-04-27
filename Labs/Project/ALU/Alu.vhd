@@ -18,6 +18,9 @@ entity ALU is
          zero_o       : out std_logic;                     --(výsledek "0")
          zapor_zn_o   : out std_logic;                     --(záporný výsledek)
          carry_o      : out std_logic;                     --(signalizace pøeneseného bitu carry)
+			a_dvojk_o    : out std_logic;                     --(signalizace pøepoètených vstupu A podle dvojkového doplòku) (kvùli zobrazení na displeji)
+			b_dvojk_o    : out std_logic;                     --(signalizace pøepoètených vstupu B podle dvojkového doplòku) (kvùli zobrazení na displeji)
+			op_dvojk_o   : out std_logic;                     --(signalizace pøepoètených vstupu OP podle dvojkového doplòku) (kvùli zobrazení na displeji)
          res_o        : out unsigned (3 downto 0)          --(výsledek)
          );
 end ALU; 
@@ -34,7 +37,8 @@ begin
 
       zero_o <= '1' when sres_o(3 downto 0) = "0000" else '0';     -- nastavení signalizace výsledku "0"
       res_o <= sres_o;                                             -- pøiøazení výslekù
-         
+            
+           
 ------------------------------------------------------------------------
 -- Process declaration 
 ------------------------------------------------------------------------
@@ -44,14 +48,33 @@ begin
          
             carry_o <= '0';
             zapor_zn_o <= '0';
-            
-            if (sres_o >= "1000") then                  -- podmínka pro signalizaci záporné hodnoty kvùli pøepoètu podle dvojkového doplòku 
-                                                        -- (max kladná hodnota = 7)
-            zapor_zn_o <= '1';
-            
-            end if;
-         
-            if srst_n_i = '0' then                      -- reset
+				
+----------------------------------------------------------------------------------------------------------------------------------				
+-- Tyto podmínky jsou zde kvùli zobrazování vstupù na displeji
+
+			if (a_i >= "1000")  then                -- podmínka pro signalizaci pøepoèítaného vstupu A podle dvojkového doplòku                                
+		      a_dvojk_o <= '1';                         
+		   else
+		      a_dvojk_o <= '0';
+		   end if;
+	
+		   if (b_i >= "1000") then                 -- podmínka pro signalizaci pøepoèítaného vstupu B podle dvojkového doplòku              
+            b_dvojk_o <= '1';                           
+		   else
+		      b_dvojk_o <= '0';
+         end if;			
+		
+		   if (op_i >= "1000")  then               -- podmínka pro signalizaci pøepoèítaného vstupu OP podle dvojkového doplòku                                                  
+		     op_dvojk_o <= '1';
+		   else
+		     op_dvojk_o <= '0';
+         end if;                                    			
+			
+		   if (sres_o >= "1000") then              -- podmínka pro signalizaci záporné hodnoty kvùli pøepoètu podle dvojkového doplòku      
+            zapor_zn_o <= '1';                   -- (max kladná hodnota = 7)             
+         end if;
+----------------------------------------------------------------------------------------------------------------------------------        
+            if srst_n_i = '0' then                      -- synchronní reset
                sres_o <= (others => '0');   
                
             elsif alu_en_i = '1' then
