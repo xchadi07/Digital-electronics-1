@@ -11,7 +11,7 @@ Aritmeticko-logická jednotka (ALU, Arithmetic & Logic Unit) je jedna ze základ
 * synchronní reset
 * zobrazení vstupních hodnot (vč. hodnoty pro operaci) a výsledku na sedmisegmentovém displeji
 * implementace top vrstvy na CoolRunner-II CPLD starter board XC2C256-TQ144
-Jednotka počítá s hodnotami typu unsigned, ale na displeji se zobrazují jako jako typ signed se signalizací záporného znaménka pomocí led diody, kvůli přepočítání podle dvojkového doplňku. Čtyřbytová jednotka může dosáhnout maximální kladné hodnoty 7 a další hodnoty se přepočítají na záporné (viz. obrázek). Tento převod jsme provedli stanovením podmínky v modulu ALU, kdy se při hodnotách výsledku větších nebo rovných 8 signalizuje záporná hodnota a pomocí modulu hex_to_7seg, kde jsme implementovali hodnoty 9 a vyšší jako hodnoty 7, 6,...,1.
+* Jednotka počítá s hodnotami typu unsigned, ale na displeji se zobrazují jako jako typ signed se signalizací záporného znaménka pomocí led diody, kvůli přepočítání podle dvojkového doplňku. Čtyřbytová jednotka může dosáhnout maximální kladné hodnoty 7 a další hodnoty se přepočítají na záporné (viz. obrázek). Tento převod jsme provedli stanovením podmínky v modulu ALU, kdy se při hodnotách výsledku větších nebo rovných 8 signalizuje záporná hodnota a pomocí modulu hex_to_7seg, kde jsme implementovali hodnoty 9 a vyšší jako hodnoty 7, 6,...,1.
 
 ### Dvojkový doplňek
 ![dvojk_dop.PNG](/Labs/images/dvojk_dop.PNG)
