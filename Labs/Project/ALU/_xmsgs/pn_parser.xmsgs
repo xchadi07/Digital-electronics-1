@@ -8,7 +8,19 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/micha/OneDrive/Dokumenty/GitHub/Digital-electronics-1/Labs/Project/ALU/tb_0.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Z:/GIT/Digital-electronics-1/Labs/Project/ALU/Alu.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Z:/GIT/Digital-electronics-1/Labs/Project/ALU/clock_enable.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Z:/GIT/Digital-electronics-1/Labs/Project/ALU/drive_7seg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Z:/GIT/Digital-electronics-1/Labs/Project/ALU/hex_to_7seg.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;Z:/GIT/Digital-electronics-1/Labs/Project/ALU/top.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
